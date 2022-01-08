@@ -1,13 +1,14 @@
 ﻿@model NEGRASM.Models.Consumidor;
 
 @{
-    ViewData["Title"] = "Consumidor";
+    ViewData["Title"] = "Pessoas";
     var consumidores = ViewData["Consumidores"] as List<Consumidor>;
 }
 
-<h1> Gerenciamneto de Clientes  </h1>
+<h1> Realize o Cadastro </h1>
+<h4>Para receber novidades.</h4>
 
-<div class="container">
+<div class="container" style="background-image:url(https://conwayscene.com/wp-content/uploads/2020/10/1601418871041f14e49aa34709c97060f.jpg)" width="400" height="300">>
     <div class="row">
          <div class="col-md-12">
 
@@ -16,7 +17,7 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label  class="text-light" for="">Nome completo</label>
-                        <input asp-for="Nome" type="text" class="form-control" id="" placeholder="José Silva">
+                        <input asp-for="Nome" type="text" class="form-control" id="" placeholder="Escreva aqui seu nome Completo">
                     </div>
                     <div class="form-group col-md-3">
                         <label class="text-light" for="">CPF</label>
@@ -24,15 +25,15 @@
                     </div>
                      <div class="form-group col-md-6">
                         <label class="text-light" for="">Endereço</label>
-                        <input asp-for="Endereco" type="text" class="form-control" id="" placeholder="Av.Brasil">
+                        <input asp-for="Endereco" type="text" class="form-control" id="" placeholder="Escreva aqui seu endereço">
                     </div>
                       <div class="form-group col-md-6">
                         <label class="text-light" for="">Complemento</label>
-                        <input asp-for="Complemento" type="text" class="form-control" id="" placeholder="Bloco 0 Casa 2">
+                        <input asp-for="Complemento" type="text" class="form-control" id="" placeholder="Exemplo:Bloco 0 Casa 2">
                     </div>
                      <div class="form-group col-md-6">
                         <label class="text-light" for="">Cidade</label>
-                        <input asp-for="Cidade" type="text" class="form-control" id="" placeholder="Petrópolis">
+                        <input asp-for="Cidade" type="text" class="form-control" id="" placeholder="Ex:Rio de Janeiro">
                     </div>
                      <div class="form-group col-md-3">
                         <label class="text-light" for="">Estado</label>
@@ -45,7 +46,7 @@
                     </div>
                      <div class="form-group col-md-6">
                         <label class="text-light" for="">Email</label>
-                        <input asp-for="Email" type="text" class="form-control" id="" placeholder="j@exemplo.com">
+                        <input asp-for="Email" type="text" class="form-control" id="" placeholder="nome@exemplo.com">
                     </div>
                      <div class="form-group col-md-3">
                         <label class="text-light" for="">Telefone</label>
@@ -94,7 +95,7 @@
                     </div>
                     <div class="form-group col-md-6">
                         <label class="text-light" for="">Nome completo</label>
-                        <input asp-for="Nome" type="text" class="form-control" id="" placeholder="Maria Souza">
+                        <input asp-for="Nome" type="text" class="form-control" id="" placeholder="Escreva aqui seu nome completo">
                     </div>
                     <div class="form-group col-md-3">
                         <label class="text-light" for="">CPF</label>
@@ -102,15 +103,15 @@
                     </div>
                      <div class="form-group col-md-6">
                         <label class="text-light" for="">Endereço</label>
-                        <input asp-for="Endereco" type="text" class="form-control" id="" placeholder="Av.Brasil">
+                        <input asp-for="Endereco" type="text" class="form-control" id="" placeholder="Escreva aqui seu endereço">
                     </div>
                        <div class="form-group col-md-6">
                         <label class="text-light" for="">Complemento</label>
-                        <input asp-for="Complemento" type="text" class="form-control" id="" placeholder="Bloco 0 Casa 2">
+                        <input asp-for="Complemento" type="text" class="form-control" id="" placeholder="Ex:Bloco 0 Casa 2">
                     </div>
                       <div class="form-group col-md-6">
                         <label class="text-light" for="">Cidade</label>
-                        <input asp-for="Cidade" type="text" class="form-control" id="" placeholder="Petrópolis">
+                        <input asp-for="Cidade" type="text" class="form-control" id="" placeholder="Ex:Petrópolis">
                     </div>
                       <div class="form-group col-md-3">
                         <label class="text-light" for="">Estado</label>
@@ -123,7 +124,7 @@
                     </div>
                      <div class="form-group col-md-6">
                         <label class="text-light" for="">Email</label>
-                        <input asp-for="Email" type="text" class="form-control" id="" placeholder="j@exemplo.com">
+                        <input asp-for="Email" type="text" class="form-control" id="" placeholder="nome@exemplo.com">
                     </div>
                      <div class="form-group col-md-3">
                         <label class="text-light" for="">Telefone</label>
@@ -146,8 +147,13 @@
                 <button type="submit" class="btn btn-primary">Atualizar</button>
             </form>
 
+            <br />
+            <br />
 
-               <h2>Clientes cadastrados</h2>
+            <br />
+
+
+               <h2 class="text-light">Clientes cadastrados</h2>
                 <table class="table bg-light">
                     <thead>
                        <tr>
