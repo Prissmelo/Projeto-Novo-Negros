@@ -10,7 +10,7 @@ namespace NEGRASM.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-3RKPI3K; Initial Catalog=NEGROS; Integrated Security=True");
+            optionsBuilder.UseSqlServer("Data Source=SQL5080.site4now.net,1433;Initial Catalog=db_a83211_negros;User Id=db_a83211_negros_admin;Password=DESKTOP3RKPI3K");
 
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
